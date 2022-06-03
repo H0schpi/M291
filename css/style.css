@@ -1,0 +1,292 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Rubik&display=swap');
+
+body {
+color: black;
+font-family: 'Rubik', sans-serif;
+}
+
+header {
+    min-height: 100px;
+    background: black;
+    color: white;
+}
+
+.logo {
+font-family: 'Bangers', cursive;
+font-size: 3em;
+position: absolute;
+margin: 0;
+top: 20px;
+left: 20px;
+}
+
+.nav {
+    height: 100px;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    gap: 5%;
+    padding: 2em;
+}
+
+.nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav a:hover {
+    color: gray;
+}
+
+main {
+    min-height: calc(100vh - 200px);
+}
+
+h1 {
+    font-family: 'Bangers', cursive;
+    font-size: 2.5em;
+}
+
+.top-section{
+    width: 100%;
+    min-height: 25vh;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../media/header-image.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-section h1 {
+    font-size: 3em;
+}
+
+.home-wrapper {
+    margin-block: 3em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2em;
+}
+
+.titles-homepage {
+    font-family: 'Bangers', cursive;
+    color: white;
+    font-size: 2em;
+}
+
+.home-wrapper div {
+    height: 300px;
+    width: 300px;
+}
+
+.home-wrapper a {
+    text-decoration: none;
+}
+
+.home-item-1,
+.home-item-2,
+.home-item-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-item-1 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../media/Skater-1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.home-item-2 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../media/Skater-2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.home-item-3 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../media/Skater-3.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.home-item-1:hover {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../media/Skater-1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.home-item-2:hover {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../media/Skater-2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.home-item-3:hover {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../media/Skater-3.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.footer {
+    width: 100%;
+    min-height: 100px;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 2em;
+}
+
+.footer a {
+text-decoration: none;
+color: inherit;
+}
+
+.footer a:hover {
+color: gray;
+}
+
+.sm-icon {
+    margin-inline: 15px;
+    width: 20px;
+}
+
+.sm-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Game */
+#score {
+    text-align: center;
+    }
+    
+    
+    
+    .highscore_ {
+    text-align: center;
+    }
+    
+    
+    
+    
+    #game {
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    z-index: 1;
+    }
+    
+    
+    
+    #background {
+    width: 600px;
+    height: 300px;
+    background-image: url("https://i.pinimg.com/originals/46/ac/9e/46ac9e282d3c303934a72d941845785b.gif");
+    position: absolute;
+    z-index: -1;
+    border: 1px solid black;
+    border-radius: 25px;
+    background-attachment: local;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: 600px 300px;
+    animation: moveBackground 20s linear infinite;
+    }
+    
+    
+    
+    
+    #dino {
+    height: 75px;
+    width: 75px;
+    top: 220px;
+    position: relative;
+    background-image: url("https://img.itch.zone/aW1hZ2UvODYzNTQyLzQ4NDg0MzAuZ2lm/original/%2BI3dO9.gif");
+    background-size: cover;
+    }
+    
+    
+    
+    .dino-dies {
+    background: red;
+    }
+    
+    
+    
+    #rock {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 165px;
+    left: 550px;
+    background-image: url("https://i.pinimg.com/originals/b9/18/86/b918860d89d6ce3139dc89f8a3843aa6.png");
+    background-size: cover;
+    animation: rock 1.33s infinite;
+    }
+    
+    
+    
+    @keyframes rock {
+    0% {
+    left: 550px;
+    }
+    
+    
+    
+    100% {
+    left: -50px;
+    }
+    }
+    
+    
+    
+    .jump-animation {
+    animation: jump 0.5s;
+    }
+    
+    
+    
+    @keyframes jump {
+    0% {
+    top: 225px;
+    }
+    
+    
+    
+    50% {
+    top: 75px;
+    }
+    
+    
+    
+    75% {
+    top: 75px;
+    }
+    
+    
+    
+    100% {
+    top: 225px;
+    }
+    }
+    
+    
+    
+    @keyframes moveBackground {
+    0% {
+    background-position: 0px 0px;
+    }
+    
+    
+    
+    100% {
+    background-position: -600px 0px;
+    }
+    }
