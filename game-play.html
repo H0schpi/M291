@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Game</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+      <meta name="Description" CONTENT="">
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+   <body>
+   <header>
+      <p class="logo"><strong>Skate</strong>Shack</p>
+         <ul class="nav">
+            <li>
+               <a href="index.html">Home</a>
+            </li>
+            <li>
+               <a href="shop.html">Shop</a>
+            </li>
+            <li>
+               <a href="game.html">Game</a>
+            </li>
+            <li>
+               <a href="about-us.html">Über uns</a>
+            </li>
+         </ul>
+   </header>
+   <main class="grid">
+      <div class="content-game">
+         <div class="gameRow gameInfo">
+           Weichen den Hydranten aus.
+           Klicke, um zu springen.
+         </div>
+     
+     
+         <div id="game">
+           <div class="startScreen" id="startScreen">
+             <div class="startScreenText">
+               Klicken Sie, um das Spiel zu starten.
+             </div>
+           </div>
+     
+           <div id="background"></div>
+           <div id="dino" class="dino-dies"></div>
+           <div id="rock"></div>
+           <div id="goodie"></div>
+         </div>
+     
+     
+         <div class="gameRow score" id="score">0</div>
+         <div class="gameRow highscore">
+       
+           Highscore <span id="highscore-value">0</span>
+         </div> 
+         <div class="gameRow">Goodies <span id="goodies-value">0</span> </div>
+     
+         <div class="gameRow gameOver" id="gameOver">
+           Glückwunsch...!<br>
+     
+         </div>    
+       </div>
+   </main>
+   <footer>
+    <ul class="footer">
+       <li>
+          <a href="https://google.com">Impressum</a> | <a href="https://google.com">Datenschutz</a>
+       </li>
+       <li>
+          &copy 2022 SKATESHACK
+       </li>
+       <li>
+          <a href="https://instagram.com">
+             <img src="media/icons/instagram-brands.svg" class="sm-icon" alt="">
+          </a>
+          <a href="https://facebook.com">
+             <img src="media/icons/facebook-square-brands.svg" class="sm-icon" alt="">
+          </a>
+          <a href="https://twitter.com">
+             <img src="media/icons/twitter-square-brands.svg" class="sm-icon" alt="">
+          </a>
+       </li>
+    </ul>
+ </footer>
+ <script src="scripts/game.js"></script>
+</body>
+</html>
